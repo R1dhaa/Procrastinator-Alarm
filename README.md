@@ -1,20 +1,20 @@
-# [Project Name] 🎯
+# PROCRASTINATOR ALARM 🎯
 
 
 ## Basic Details
-### Team Name: [Name]
+### Team Name: SERENDIPITY 2.O
 
 
 ### Team Members
-- Member 1: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
+- Member 1: Aparna Sudeep C - SCMS School of Engineering and Technology
+- Member 2: Gayathri Sudheesh - SCMS School of Engineering and Technology
+- Member 3: Fatma Ridha - SCMS School of Engineering and Technology
 
 ### Hosted Project Link
 [mention your project hosted project link here]
 
 ### Project Description
-[2-3 lines about what your project does]
+
 
 ### The Problem statement
 [What ridiculous problem are you solving?]
