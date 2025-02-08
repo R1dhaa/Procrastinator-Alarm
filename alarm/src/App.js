@@ -6,6 +6,7 @@ const AlarmClock = () => {
   const [isAlarmOn, setAlarmOn] = useState(false);
   const [alarmTriggered, setAlarmTriggered] = useState(false); // Prevents multiple alerts
   const [showSnooze, setShowSnooze] = useState(false);
+  const alarmSound = new Audio("/sound/alarm_sound.wav");
 
 useEffect(() => {
   const interval = setInterval(() => {
@@ -13,7 +14,7 @@ useEffect(() => {
     setTime(currentTime);
     
     if (isAlarmOn && alarmTime === currentTime.slice(0, 5) && !alarmTriggered) {
-      alert("⏰ Wake up! Time to stop procrastinating!");
+      alarmSound.play();
       setAlarmTriggered(true); // Prevent multiple alerts
       setShowSnooze(true); //  Show Snooze button after alarm rings
    
@@ -23,13 +24,15 @@ useEffect(() => {
 }, [alarmTime, isAlarmOn, alarmTriggered]);
 
 const handleSnooze = () => {
+  alarmSound.pause();
+  alarmSound.currentTime = 0;
   setSnoozeCount(prev=>prev+1);
   setShowSnooze(false); // Hide snooze button
 
     setTimeout(() => {
     setShowSnooze(true); // Reappear after 10 seconds
     }, 10000);
-  if (snoozeCount < 2) {
+    if (snoozeCount < 2) {
     alert("Snoozed! Next time it won't be this easy...");
   } else {
     let challenge = Math.floor(Math.random() * 10) + Math.floor(Math.random() * 10);
