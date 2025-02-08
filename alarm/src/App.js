@@ -33,7 +33,7 @@ const handleSnooze = () => {
 
 const handleSetAlarm = () => {
   if (alarmTime) {
-    setIsAlarmOn(true);
+    setAlarmOn(true);
     alert(`Alarm set for ${alarmTime}`);
   }
 };
