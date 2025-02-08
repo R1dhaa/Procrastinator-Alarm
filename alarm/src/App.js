@@ -21,7 +21,7 @@ const handleSnooze = () => {
     alert("Snoozed! Next time it won't be this easy...");
   } else {
     let challenge = Math.floor(Math.random() * 10) + Math.floor(Math.random() * 10);
-    let userAnswer = prompt(Solve this to snooze: ${challenge} + ${challenge} = ?);
+    let userAnswer = prompt(`Solve this to snooze: ${challenge} + ${challenge} = ?`);
     if (parseInt(userAnswer) === challenge * 2) {
       alert("Fine, you can snooze.");
     } else {
