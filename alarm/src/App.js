@@ -33,6 +33,7 @@ useEffect(() => {
 }, [alarmTime, isAlarmOn, alarmTriggered]);
 
 const handleSnooze = () => {
+  if (snoozeCount < 2) {
   if (alarmSound.current) {
     alarmSound.current.pause();
     alarmSound.current.currentTime = 0;
@@ -42,16 +43,35 @@ const handleSnooze = () => {
 
     setTimeout(() => {
     setShowSnooze(true); // Reappear after 10 seconds
-    }, 10000);
-    if (snoozeCount < 2) {
+    if (alarmSound.current) {
+      alarmSound.current.play(); // Play alarm sound again when snooze ends
+    }
+  }, 10000);
+    
     alert("Snoozed! Next time it won't be this easy...");
   } else {
     let challenge = Math.floor(Math.random() * 10) + Math.floor(Math.random() * 10);
     let userAnswer = prompt(`Solve this to snooze: ${challenge} + ${challenge} = ?`);
     if (parseInt(userAnswer) === challenge * 2) {
       alert("Fine, you can snooze.");
+      if (alarmSound.current) {
+        alarmSound.current.pause();
+        alarmSound.current.currentTime = 0;
+      }
+      setShowSnooze(false);
+
+      setTimeout(() => {
+        setShowSnooze(true);
+        if (alarmSound.current) {
+          alarmSound.current.play();
+        }
+      }, 10000);
     } else {
       alert("Wrong answer! Alarm stays on!");
+      setShowSnooze(true);
+      if (alarmSound.current) {
+        alarmSound.current.play();
+      }
     }
   }
 };
