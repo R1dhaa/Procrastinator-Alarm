@@ -7,7 +7,7 @@ const AlarmClock = () => {
 }
 useEffect(() => {
   const interval = setInterval(() => {
-    const now new Date();
+    const now =new Date();
     const formattedTime=now.getHours()+":"+now.getMinutes();
     if (isAlarmOn && alarmTime === formattedTime) {
       alert("Wake up! Time to stop procrastinating!");
