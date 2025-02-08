@@ -4,18 +4,20 @@ const AlarmClock = () => {
   const [snoozeCount, setSnoozeCount] = useState(0)
   const [alarmTime, setAlarmTime] = useState("");
   const [isAlarmOn, setAlarmOn] = useState(false);
+  const [alarmTriggered, setAlarmTriggered] = useState(false); // Prevents multiple alerts
 
 useEffect(() => {
   const interval = setInterval(() => {
     setTime(new Date().toLocaleTimeString());
     const now =new Date();
     const formattedTime=now.toTimeString().slice(0,5);
-    if (isAlarmOn && alarmTime === formattedTime) {
+    if (isAlarmOn && !alarmTriggered && alarmTime === formattedTime) {
       alert("Wake up! Time to stop procrastinating!");
+      setAlarmTriggered(true); // Prevents repeated alerts
     }
   }, 1000);
   return () => clearInterval(interval);
-}, [time,alarmTime, isAlarmOn]);
+}, [alarmTime, isAlarmOn, alarmTriggered]);
 
 const handleSnooze = () => {
   setSnoozeCount(prev=>prev+1);
