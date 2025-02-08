@@ -11,7 +11,7 @@
 - Member 3: Fatma Ridha - SCMS School of Engineering and Technology
 
 ### Hosted Project Link
-[mention your project hosted project link here]
+nothing much
 
 ### Project Description
 Alarm app where every "Snooze" makes the alarm harder to stop
