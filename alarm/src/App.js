@@ -7,17 +7,18 @@ const AlarmClock = () => {
 
 useEffect(() => {
   const interval = setInterval(() => {
+    setTime(new Date().toLocaleTimeString());
     const now =new Date();
-    const formattedTime=now.getHours()+":"+now.getMinutes();
+    const formattedTime=now.toTimeString().slice(0,5);
     if (isAlarmOn && alarmTime === formattedTime) {
       alert("Wake up! Time to stop procrastinating!");
     }
   }, 1000);
   return () => clearInterval(interval);
-}, [alarmTime, isAlarmOn]);
+}, [time,alarmTime, isAlarmOn]);
 
 const handleSnooze = () => {
-  setSnoozeCount(snoozeCount + 1);
+  setSnoozeCount(prev=>prev+1);
   if (snoozeCount < 2) {
     alert("Snoozed! Next time it won't be this easy...");
   } else {
