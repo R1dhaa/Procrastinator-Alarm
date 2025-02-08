@@ -51,7 +51,7 @@ For Software:
 
 ![image](https://github.com/user-attachments/assets/23590b98-fcf2-4c91-924e-253bd87b050d)
 
-*Add caption explaining what this shows*
+Code that offers a snooze feature, where users can snooze the alarm up to 2 times before being asked to solve a math challenge to snooze again.
 
 ![Screenshot2](Add screenshot 2 here with proper name)
 *Add caption explaining what this shows*
