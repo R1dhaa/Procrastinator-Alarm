@@ -33,22 +33,18 @@ For Software:
 - CSS: Basic CSS is used for styling the app.
   
 # Installation
-[commands] nodejs react 
-
+  npm install 
 
 # Run
-[commands]
+  npm start
 
-### Project Documentation
-For Software:
-
-# Screenshots (Add at least 3)
+# Screenshots 
 
 ![image](https://github.com/user-attachments/assets/23590b98-fcf2-4c91-924e-253bd87b050d)
 Code that offers a snooze feature, where users can snooze the alarm up to 2 times before being asked to solve a math challenge to snooze again.
 
 [image](https://github.com/user-attachments/assets/609902be-1875-4733-beef-b7926e146a6f)
-
+Code that shows the basic structure of procrastinator alarm
 
 [Image](https://github.com/user-attachments/assets/e93ff049-5e58-4741-a8d9-6d3fad615488)
 Code that adds alarm sound
@@ -60,7 +56,7 @@ Code that adds alarm sound
 
 
 # Build Photos
-![WhatsApp Image 2025-02-08 at 11 43 58 PM](https://github.com/user-attachments/assets/00b613c2-d2c0-4ea6-bd49-3ef2a6d253c3)
+[image](https://github.com/user-attachments/assets/d30193ae-f7d6-489b-9c07-d64aebb2f4df)
 
 ![image](https://github.com/user-attachments/assets/8a012b7a-6181-4ba0-9337-a39fdc6d4727)
 
@@ -81,7 +77,7 @@ https://youtu.be/i_23KUAEtUM?si=gS6U8_01Heq30eSK
 A brief intro to Git & GitHub made easy with Visual Studio Code 
 
 ## Team Contributions
-- Aparna Sudheep C: [Specific contrib
+- Aparna Sudeep C: [Specific contrib
 - Gayathri Sudheesh: [Specific contributions]
 - Fatma Ridha: [Specific contributions]
 
