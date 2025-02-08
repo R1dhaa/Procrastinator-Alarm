@@ -4,7 +4,7 @@ const AlarmClock = () => {
   const [snoozeCount, setSnoozeCount] = useState(0)
   const [alarmTime, setAlarmTime] = useState("");
   const [isAlarmOn, setAlarmOn] = useState(false);
-}
+
 useEffect(() => {
   const interval = setInterval(() => {
     const now =new Date();
@@ -37,3 +37,25 @@ const handleSetAlarm = () => {
     alert(`Alarm set for ${alarmTime}`);
   }
 };
+
+return (
+  <div style={{ textAlign: "center", padding: "20px" }}>
+    <h1>Procrastinator's Alarm Clock ⏰</h1>
+    <h2>Current Time: {time}</h2>
+    <input
+      type="time"
+      onChange={(e) => setAlarmTime(e.target.value)}
+      style={{ margin: "10px", padding: "5px" }}
+    />
+    <button onClick={handleSetAlarm} style={{ padding: "10px" }}>Set Alarm</button>
+    <br /><br />
+    {isAlarmOn && (
+      <button onClick={handleSnooze} style={{ padding: "10px", background: "red", color: "white" }}>
+        Snooze
+      </button>
+    )}
+  </div>
+  );
+};
+
+export default AlarmClock;
