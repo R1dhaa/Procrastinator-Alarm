@@ -14,13 +14,14 @@
 [mention your project hosted project link here]
 
 ### Project Description
-
+Alarm app where every "Snooze" makes the alarm harder to stop
+Final snooze forces you to solve a puzzle or answer a math question
 
 ### The Problem statement
-[What ridiculous problem are you solving?]
+Users tend to snooze their alarm repeatedly, leading to delayed waking times and an unproductive morning routine.
 
 ### The Solution
-[How are you solving it? Keep it fun!]
+Create an alarm clock that doesn't allow the user to snooze unless they complete a small task (e.g., math questions, puzzle solving etc) that forces them to engage and fully wake up before resetting the alarm.
 
 ## Technical Details
 ### Technologies/Components Used
