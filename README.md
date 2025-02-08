@@ -1,4 +1,4 @@
-# PROCRASTINATOR ALARM 🎯
+  # PROCRASTINATOR ALARM 🎯
 
 
 ## Basic Details
@@ -32,10 +32,6 @@ For Software:
 - HTML: The app uses HTML to render the UI.
 - CSS: Basic CSS is used for styling the app.
   
-
-
-### Implementation
-For Software:
 # Installation
 [commands]
 
@@ -51,8 +47,9 @@ For Software:
 
 Code that offers a snooze feature, where users can snooze the alarm up to 2 times before being asked to solve a math challenge to snooze again.
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
+![image](https://github.com/user-attachments/assets/609902be-1875-4733-beef-b7926e146a6f)
+
+
 
 ![Screenshot3](Add screenshot 3 here with proper name)
 *Add caption explaining what this shows*
