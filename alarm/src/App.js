@@ -1,4 +1,4 @@
-import React, {useState,useEffect} from  "react";
+import React, {useState,useEffect,useRef} from  "react";
 const AlarmClock = () => {
   const [time, setTime] = useState(new Date().toLocaleTimeString())
   const [snoozeCount, setSnoozeCount] = useState(0)
@@ -6,17 +6,26 @@ const AlarmClock = () => {
   const [isAlarmOn, setAlarmOn] = useState(false);
   const [alarmTriggered, setAlarmTriggered] = useState(false); // Prevents multiple alerts
   const [showSnooze, setShowSnooze] = useState(false);
-  const alarmSound = new Audio("/sound/alarm_sound.wav");
+  const alarmSound = useRef(null); // Use useRef but initialize it in useEffect
 
+  useEffect(() => {
+    alarmSound.current = new Audio("/sound/alarm_sound.wav"); // Initialize the audio instance
+  }, []);
 useEffect(() => {
   const interval = setInterval(() => {
     const currentTime = new Date().toLocaleTimeString("en-US", { hour12: false });
     setTime(currentTime);
     
-    if (isAlarmOn && alarmTime === currentTime.slice(0, 5) && !alarmTriggered) {
-      alarmSound.play();
-      setAlarmTriggered(true); // Prevent multiple alerts
-      setShowSnooze(true); //  Show Snooze button after alarm rings
+    if (
+      isAlarmOn &&
+      alarmTime === currentTime.slice(0, 5) &&
+      !alarmTriggered &&
+      alarmSound.current
+    ) {
+      alarmSound.current.loop = true;
+      alarmSound.current.play();
+      setAlarmTriggered(true);
+      setShowSnooze(true);
    
     }
   }, 1000);
@@ -24,8 +33,10 @@ useEffect(() => {
 }, [alarmTime, isAlarmOn, alarmTriggered]);
 
 const handleSnooze = () => {
-  alarmSound.pause();
-  alarmSound.currentTime = 0;
+  if (alarmSound.current) {
+    alarmSound.current.pause();
+    alarmSound.current.currentTime = 0;
+  }
   setSnoozeCount(prev=>prev+1);
   setShowSnooze(false); // Hide snooze button
 
@@ -48,10 +59,20 @@ const handleSnooze = () => {
 const handleSetAlarm = () => {
   if (alarmTime) {
     setAlarmOn(true);
-    setAlarmTriggered(false); // 🆕 Reset trigger when setting a new alarm
-      setShowSnooze(false); // 🆕 Hide snooze initially
+    setAlarmTriggered(false); //  Reset trigger when setting a new alarm
+      setShowSnooze(false); //  Hide snooze initially
     alert(`Alarm set for ${alarmTime}`);
   }
+};
+const handleStopAlarm = () => {
+  if (alarmSound.current) {
+    alarmSound.current.pause();
+    alarmSound.current.currentTime = 0;
+    alarmSound.current.loop = false;
+  }
+  setAlarmOn(false);
+  setAlarmTriggered(false);
+  setShowSnooze(false);
 };
 
 return (
@@ -68,12 +89,13 @@ return (
         Set Alarm
       </button>
       <br />
-      {/* 🆕 Snooze button appears only AFTER the alarm rings */}
+      {/*  Snooze button appears only AFTER the alarm rings */}
       {showSnooze && (
           <button onClick={handleSnooze} style={styles.snoozeButton}>
             Snooze
           </button>
       )}
+      {alarmTriggered && <button onClick={handleStopAlarm} style={styles.stopButton}>Stop</button>}
     </div>
   </div>
 );
@@ -130,6 +152,17 @@ snoozeButton: {
   fontSize: "16px",
   color: "white",
   background: "#ff4757",
+  border: "none",
+  borderRadius: "5px",
+  cursor: "pointer",
+  width: "100%",
+  marginTop: "10px",
+},
+stopButton: {
+  padding: "10px 20px",
+  fontSize: "16px",
+  color: "white",
+  background: "#ff6b81",
   border: "none",
   borderRadius: "5px",
   cursor: "pointer",
