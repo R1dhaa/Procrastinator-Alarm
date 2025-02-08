@@ -33,65 +33,53 @@ For Software:
 - CSS: Basic CSS is used for styling the app.
   
 # Installation
-[commands]
+  npm install 
 
 # Run
-[commands]
+  npm start
 
-### Project Documentation
-For Software:
-
-# Screenshots (Add at least 3)
+# Screenshots 
 
 ![image](https://github.com/user-attachments/assets/23590b98-fcf2-4c91-924e-253bd87b050d)
-
 Code that offers a snooze feature, where users can snooze the alarm up to 2 times before being asked to solve a math challenge to snooze again.
 
-![image](https://github.com/user-attachments/assets/609902be-1875-4733-beef-b7926e146a6f)
+[image](https://github.com/user-attachments/assets/609902be-1875-4733-beef-b7926e146a6f)
+Code that shows the basic structure of procrastinator alarm
 
+[Image](https://github.com/user-attachments/assets/e93ff049-5e58-4741-a8d9-6d3fad615488)
+Code that adds alarm sound
 
-
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
 
 # Diagrams
 ![Workflow](Add your workflow/architecture diagram here)
 *Add caption explaining your workflow*
 
-For Hardware:
-
-# Schematic & Circuit
-![Circuit](Add your circuit diagram here)
-*Add caption explaining connections*
-
-![Schematic](Add your schematic diagram here)
-*Add caption explaining the schematic*
 
 # Build Photos
-![Team](Add photo of your team here)
+[image](https://github.com/user-attachments/assets/d30193ae-f7d6-489b-9c07-d64aebb2f4df)
 
+![image](https://github.com/user-attachments/assets/8a012b7a-6181-4ba0-9337-a39fdc6d4727)
 
-![Components](Add photo of your components here)
-*List out all components shown*
+-AlarmClock Component
+-Time Display
+-Alarm Time Input
+-Set Alarm Button
+-Snooze Button
 
-![Build](Add photos of build process here)
-*Explain the build steps*
 
 ![Final](Add photo of final product here)
 *Explain the final build*
 
 ### Project Demo
 # Video
-[Add your demo video link here]
-*Explain what the video demonstrates*
-
-# Additional Demos
-[Add any extra demo materials/links]
+Demo of using Git and Github with Visual Studio Code
+https://youtu.be/i_23KUAEtUM?si=gS6U8_01Heq30eSK
+A brief intro to Git & GitHub made easy with Visual Studio Code 
 
 ## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
+- Aparna Sudeep C: [Specific contrib
+- Gayathri Sudheesh: [Specific contributions]
+- Fatma Ridha: [Specific contributions]
 
 ---
 Made with ❤️ at TinkerHub
