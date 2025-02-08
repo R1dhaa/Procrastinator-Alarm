@@ -5,6 +5,7 @@ const AlarmClock = () => {
   const [alarmTime, setAlarmTime] = useState("");
   const [isAlarmOn, setAlarmOn] = useState(false);
   const [alarmTriggered, setAlarmTriggered] = useState(false); // Prevents multiple alerts
+  const [showSnooze, setShowSnooze] = useState(false);
 
 useEffect(() => {
   const interval = setInterval(() => {
@@ -14,8 +15,8 @@ useEffect(() => {
     if (isAlarmOn && alarmTime === currentTime.slice(0, 5) && !alarmTriggered) {
       alert("⏰ Wake up! Time to stop procrastinating!");
       setAlarmTriggered(true); // Prevent multiple alerts
-    } else if (alarmTime !== currentTime.slice(0, 5)) {
-      setAlarmTriggered(false); // Reset when time moves past alarm
+      setShowSnooze(true); //  Show Snooze button after alarm rings
+   
     }
   }, 1000);
   return () => clearInterval(interval);
@@ -23,6 +24,11 @@ useEffect(() => {
 
 const handleSnooze = () => {
   setSnoozeCount(prev=>prev+1);
+  setShowSnooze(false); // Hide snooze button
+
+    setTimeout(() => {
+    setShowSnooze(true); // Reappear after 10 seconds
+    }, 10000);
   if (snoozeCount < 2) {
     alert("Snoozed! Next time it won't be this easy...");
   } else {
@@ -39,6 +45,8 @@ const handleSnooze = () => {
 const handleSetAlarm = () => {
   if (alarmTime) {
     setAlarmOn(true);
+    setAlarmTriggered(false); // 🆕 Reset trigger when setting a new alarm
+      setShowSnooze(false); // 🆕 Hide snooze initially
     alert(`Alarm set for ${alarmTime}`);
   }
 };
@@ -57,10 +65,11 @@ return (
         Set Alarm
       </button>
       <br />
-      {isAlarmOn && (
-        <button onClick={handleSnooze} style={styles.snoozeButton}>
-          Snooze
-        </button>
+      {/* 🆕 Snooze button appears only AFTER the alarm rings */}
+      {showSnooze && (
+          <button onClick={handleSnooze} style={styles.snoozeButton}>
+            Snooze
+          </button>
       )}
     </div>
   </div>
