@@ -8,12 +8,14 @@ const AlarmClock = () => {
 
 useEffect(() => {
   const interval = setInterval(() => {
-    setTime(new Date().toLocaleTimeString());
-    const now =new Date();
-    const formattedTime=now.toTimeString().slice(0,5);
-    if (isAlarmOn && !alarmTriggered && alarmTime === formattedTime) {
-      alert("Wake up! Time to stop procrastinating!");
-      setAlarmTriggered(true); // Prevents repeated alerts
+    const currentTime = new Date().toLocaleTimeString("en-US", { hour12: false });
+    setTime(currentTime);
+    
+    if (isAlarmOn && alarmTime === currentTime.slice(0, 5) && !alarmTriggered) {
+      alert("⏰ Wake up! Time to stop procrastinating!");
+      setAlarmTriggered(true); // Prevent multiple alerts
+    } else if (alarmTime !== currentTime.slice(0, 5)) {
+      setAlarmTriggered(false); // Reset when time moves past alarm
     }
   }, 1000);
   return () => clearInterval(interval);
