@@ -26,15 +26,13 @@ Create an alarm clock that doesn't allow the user to snooze unless they complete
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
+- React: This app uses React, a JavaScript library, to build its user interface, and React Hooks (useState and useEffect) for state and side effect management.
+- JavaScript: The app is written in modern JavaScript.
+- JSX: The app uses JSX.
+- HTML: The app uses HTML to render the UI.
+- CSS: Basic CSS is used for styling the app.
+  
 
-For Hardware:
-- [List main components]
-- [List specifications]
-- [List tools required]
 
 ### Implementation
 For Software:
