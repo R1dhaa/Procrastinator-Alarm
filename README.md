@@ -55,12 +55,12 @@ Code that adds alarm sound
 
 ![image](https://github.com/user-attachments/assets/f70d39fe-8c53-41d2-9201-d149504f4165)
 #### Components
--AlarmClock Component
--Time Display
--Alarm Time Input
--Set Alarm Button
--Snooze Button
--Stop Button
+-AlarmClock Component  
+-Time Display  
+-Alarm Time Input  
+-Set Alarm Button  
+-Snooze Button  
+-Stop Button  
 
 
 ## Final Product
