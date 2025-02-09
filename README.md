@@ -14,7 +14,7 @@
 https://procrastinator-alarm-o76r.vercel.app/
 
 ### Project Description
-Alarm app where every "Snooze" makes the alarm harder to stop
+Alarm app where every "Snooze" makes the alarm harder to stop  
 Final snooze forces you to solve a puzzle or answer a math question
 
 ### The Problem statement
