@@ -93,6 +93,7 @@ const handleStopAlarm = () => {
   setAlarmTriggered(false);// Reset alarm trigger
   setShowSnooze(false); // Hide snooze button
 };
+
 // Render the UI
 return (
   <div style={styles.container}>
