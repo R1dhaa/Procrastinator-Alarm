@@ -1,5 +1,6 @@
-  # PROCRASTINATOR ALARM 🎯
-
+  # PROCRASTINATOR ALARM 🎯  
+  ### TAGLINE  
+  Wakeup!!!
 
 ## Basic Details
 ### Team Name: SERENDIPITY 2.O
