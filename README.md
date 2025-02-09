@@ -54,7 +54,7 @@ Code that adds alarm sound
 ![image](https://github.com/user-attachments/assets/d30193ae-f7d6-489b-9c07-d64aebb2f4df)
 
 ![image](https://github.com/user-attachments/assets/f70d39fe-8c53-41d2-9201-d149504f4165)
-
+#### Components
 -AlarmClock Component
 -Time Display
 -Alarm Time Input
