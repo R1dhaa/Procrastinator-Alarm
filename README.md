@@ -11,7 +11,7 @@
 - Member 3: Fatma Ridha - SCMS School of Engineering and Technology
 
 ### Hosted Project Link
-
+https://procrastinator-alarm-o76r.vercel.app/
 
 ### Project Description
 Alarm app where every "Snooze" makes the alarm harder to stop
@@ -64,7 +64,9 @@ Code that adds alarm sound
 -Stop Button
 
 
-![Final](Add photo of final product here)
+![Final]
+![10d546ab-2d3a-4c44-8246-493a6c6b6c1d](https://github.com/user-attachments/assets/5a7e9b0b-ef08-4717-8c68-3478d40b1342)
+
 1.Setting the Alarm:
      The user can set the alarm by entering a time in the Alarm Time Input field (e.g., 07:30).   
      Clicking the Set Alarm button activates the alarm functionality.
@@ -79,14 +81,26 @@ Code that adds alarm sound
 
 ### Project Demo
 # Video
+
+Demo of using alarm sound used
+https://mixkit.co/free-sound-effects/alarm/
+
+Demo of final procrastinator alarm website
+https://github.com/user-attachments/assets/29fddc3a-d162-48bf-9827-0fb9915eca57
+
+# Additional Demo
+
 Demo of using Git and Github with Visual Studio Code
 https://youtu.be/i_23KUAEtUM?si=gS6U8_01Heq30eSK
-A brief intro to Git & GitHub made easy with Visual Studio Code 
+A brief intro to Git & GitHub made easy with Visual Studio Code
+
+ChatGPT prompts
+
 
 ## Team Contributions
-- Aparna Sudeep C: [Specific contrib
-- Gayathri Sudheesh: [Specific contributions]
-- Fatma Ridha: [Specific contributions]
+- Aparna Sudeep C: Commit, PR, Bug Fix, Documentation
+- Gayathri Sudheesh: Commit, PR, Documentation
+- Fatma Ridha: Ideation, Commit, Bug Fix, PR, Website hosting
 
 ---
 Made with ❤️ at TinkerHub
