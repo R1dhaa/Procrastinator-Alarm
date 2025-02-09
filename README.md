@@ -92,7 +92,7 @@ https://github.com/user-attachments/assets/29fddc3a-d162-48bf-9827-0fb9915eca57
 ### Additional Demo
 
 Demo of using Git and Github with Visual Studio Code
-https://youtu.be/i_23KUAEtUM?si=gS6U8_01Heq30eSK
+https://youtu.be/i_23KUAEtUM?si=gS6U8_01Heq30eSK  
 A brief intro to Git & GitHub made easy with Visual Studio Code
 
 ChatGPT prompts
