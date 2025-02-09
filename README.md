@@ -49,9 +49,10 @@ Code that shows the basic structure of procrastinator alarm
 ![Image](https://github.com/user-attachments/assets/e93ff049-5e58-4741-a8d9-6d3fad615488)
 Code that adds alarm sound
 
-#Diagrams
+# Diagrams
 
 # Build Photos
+
 ![image](https://github.com/user-attachments/assets/d30193ae-f7d6-489b-9c07-d64aebb2f4df)
 
 ![image](https://github.com/user-attachments/assets/f70d39fe-8c53-41d2-9201-d149504f4165)
@@ -64,7 +65,7 @@ Code that adds alarm sound
 -Stop Button
 
 
-![Final]
+## Final Product
 ![10d546ab-2d3a-4c44-8246-493a6c6b6c1d](https://github.com/user-attachments/assets/5a7e9b0b-ef08-4717-8c68-3478d40b1342)
 
 1.Setting the Alarm:
@@ -79,8 +80,8 @@ Code that adds alarm sound
      If the user answers correctly, the alarm will snooze. If the answer is wrong, the alarm keeps ringing until the challenge is solved.
 
 
-### Project Demo
-# Video
+# Project Demo
+## Video
 
 Demo of using alarm sound used
 https://mixkit.co/free-sound-effects/alarm/
@@ -88,7 +89,7 @@ https://mixkit.co/free-sound-effects/alarm/
 Demo of final procrastinator alarm website
 https://github.com/user-attachments/assets/29fddc3a-d162-48bf-9827-0fb9915eca57
 
-# Additional Demo
+## Additional Demo
 
 Demo of using Git and Github with Visual Studio Code
 https://youtu.be/i_23KUAEtUM?si=gS6U8_01Heq30eSK
