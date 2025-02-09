@@ -64,6 +64,11 @@ Code that adds alarm sound
 -Stop Button  
 
 
+## Diagram  
+Flowchart  
+![Procrastinator alarm Flowchart drawio](https://github.com/user-attachments/assets/626a2d0c-3969-4701-b720-483ba25fc612)
+
+
 ## Final Product
 ![10d546ab-2d3a-4c44-8246-493a6c6b6c1d](https://github.com/user-attachments/assets/5a7e9b0b-ef08-4717-8c68-3478d40b1342)
 
