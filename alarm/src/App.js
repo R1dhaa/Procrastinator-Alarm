@@ -1,6 +1,6 @@
 import React, {useState,useEffect,useRef} from  "react";
 const AlarmClock = () => {
-  const [time, setTime] = useState(new Date().toLocaleTimeString())
+  const [time, setTime] = useState(new Date().toLocaleTimeString())// Get current time 
   const [snoozeCount, setSnoozeCount] = useState(0)
   const [alarmTime, setAlarmTime] = useState("");
   const [isAlarmOn, setAlarmOn] = useState(false);
@@ -8,14 +8,13 @@ const AlarmClock = () => {
   const [showSnooze, setShowSnooze] = useState(false);
   const alarmSound = useRef(null); // Use useRef but initialize it in useEffect
 
-  useEffect(() => {
+  useEffect(() => { // Load the alarm sound
     alarmSound.current = new Audio("/sound/alarm_sound.wav"); // Initialize the audio instance
   }, []);
-useEffect(() => {
+useEffect(() => { // Check if the alarm time matches the current time
   const interval = setInterval(() => {
     const currentTime = new Date().toLocaleTimeString("en-US", { hour12: false });
-    setTime(currentTime);
-    
+    setTime(currentTime)
     if (
       isAlarmOn &&
       alarmTime === currentTime.slice(0, 5) &&
@@ -30,10 +29,10 @@ useEffect(() => {
     }
   }, 1000);
   return () => clearInterval(interval);
-}, [alarmTime, isAlarmOn, alarmTriggered]);
+}, [alarmTime, isAlarmOn, alarmTriggered]); // Run the effect only when these values change
 
 const handleSnooze = () => {
-  if (snoozeCount < 2) {
+  if (snoozeCount < 2) {  // Counts the number of snoozes 
   if (alarmSound.current) {
     alarmSound.current.pause();
     alarmSound.current.currentTime = 0;
@@ -49,24 +48,24 @@ const handleSnooze = () => {
   }, 10000);
     
     alert("Snoozed! Next time it won't be this easy...");
-  } else {
+  } else { // User has snoozed 3 times
     let challenge = Math.floor(Math.random() * 10) + Math.floor(Math.random() * 10);
     let userAnswer = prompt(`Solve this to snooze: ${challenge} + ${challenge} = ?`);
-    if (parseInt(userAnswer) === challenge * 2) {
+    if (parseInt(userAnswer) === challenge * 2) { // Correct answer 
       alert("Fine, you can snooze.");
-      if (alarmSound.current) {
+      if (alarmSound.current) { // Stop alarm sound
         alarmSound.current.pause();
         alarmSound.current.currentTime = 0;
       }
       setShowSnooze(false);
 
-      setTimeout(() => {
+      setTimeout(() => { // Snooze for 10 seconds
         setShowSnooze(true);
         if (alarmSound.current) {
           alarmSound.current.play();
         }
       }, 10000);
-    } else {
+    } else { // Wrong answer
       alert("Wrong answer! Alarm stays on!");
       setShowSnooze(true);
       if (alarmSound.current) {
@@ -85,16 +84,16 @@ const handleSetAlarm = () => {
   }
 };
 const handleStopAlarm = () => {
-  if (alarmSound.current) {
+  if (alarmSound.current) { // Stop alarm sound
     alarmSound.current.pause();
     alarmSound.current.currentTime = 0;
     alarmSound.current.loop = false;
   }
-  setAlarmOn(false);
-  setAlarmTriggered(false);
-  setShowSnooze(false);
+  setAlarmOn(false); // Turn off alarm
+  setAlarmTriggered(false);// Reset alarm trigger
+  setShowSnooze(false); // Hide snooze button
 };
-
+// Render the UI
 return (
   <div style={styles.container}>
     <div style={styles.clockCard}>
@@ -121,6 +120,7 @@ return (
 );
 };
 
+// Styles
 const styles = {
 container: {
   display: "flex",
