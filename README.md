@@ -32,13 +32,13 @@ For Software:
 - HTML: The app uses HTML to render the UI.
 - CSS: Basic CSS is used for styling the app.
   
-# Installation
+### Installation
   npm install 
 
-# Run
+### Run
   npm start
 
-# Screenshots 
+## Screenshots 
 
 ![image](https://github.com/user-attachments/assets/23590b98-fcf2-4c91-924e-253bd87b050d)
 Code that offers a snooze feature, where users can snooze the alarm up to 2 times before being asked to solve a math challenge to snooze again.
@@ -49,10 +49,10 @@ Code that shows the basic structure of procrastinator alarm
 ![Image](https://github.com/user-attachments/assets/e93ff049-5e58-4741-a8d9-6d3fad615488)
 Code that adds alarm sound
 
-# Diagrams
+## Diagrams
 
-# Build Photos
-
+## Build Photos
+### The Team
 ![image](https://github.com/user-attachments/assets/d30193ae-f7d6-489b-9c07-d64aebb2f4df)
 
 ![image](https://github.com/user-attachments/assets/f70d39fe-8c53-41d2-9201-d149504f4165)
@@ -80,8 +80,8 @@ Code that adds alarm sound
      If the user answers correctly, the alarm will snooze. If the answer is wrong, the alarm keeps ringing until the challenge is solved.
 
 
-# Project Demo
-## Video
+## Project Demo
+### Video
 
 Demo of using alarm sound used
 https://mixkit.co/free-sound-effects/alarm/
@@ -89,14 +89,13 @@ https://mixkit.co/free-sound-effects/alarm/
 Demo of final procrastinator alarm website
 https://github.com/user-attachments/assets/29fddc3a-d162-48bf-9827-0fb9915eca57
 
-## Additional Demo
+### Additional Demo
 
 Demo of using Git and Github with Visual Studio Code
 https://youtu.be/i_23KUAEtUM?si=gS6U8_01Heq30eSK
 A brief intro to Git & GitHub made easy with Visual Studio Code
 
 ChatGPT prompts
-
 
 ## Team Contributions
 - Aparna Sudeep C: Commit, PR, Bug Fix, Documentation
