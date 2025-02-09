@@ -21,7 +21,7 @@ Final snooze forces you to solve a puzzle or answer a math question
 Users tend to snooze their alarm repeatedly, leading to delayed waking times and an unproductive morning routine.
 
 ### The Solution
-Create an alarm clock that doesn't allow the user to snooze unless they complete a small task (e.g., math questions, puzzle solving etc) that forces them to engage and fully wake up before resetting the alarm.
+Create an alarm clock that doesn't allow the user to snooze unless they complete a small task (e.g. math questions, puzzle solving etc) that forces them to engage and fully wake up before resetting the alarm.
 
 ## Technical Details
 ### Technologies/Components Used
@@ -49,26 +49,33 @@ Code that shows the basic structure of procrastinator alarm
 [Image](https://github.com/user-attachments/assets/e93ff049-5e58-4741-a8d9-6d3fad615488)
 Code that adds alarm sound
 
-
-# Diagrams
-![Workflow](Add your workflow/architecture diagram here)
-*Add caption explaining your workflow*
-
+#Diagrams
 
 # Build Photos
 [image](https://github.com/user-attachments/assets/d30193ae-f7d6-489b-9c07-d64aebb2f4df)
 
-![image](https://github.com/user-attachments/assets/8a012b7a-6181-4ba0-9337-a39fdc6d4727)
+![image](https://github.com/user-attachments/assets/f70d39fe-8c53-41d2-9201-d149504f4165)
 
 -AlarmClock Component
 -Time Display
 -Alarm Time Input
 -Set Alarm Button
 -Snooze Button
+-Stop Button
 
 
 ![Final](Add photo of final product here)
-*Explain the final build*
+1.Setting the Alarm:
+     The user can set the alarm by entering a time in the Alarm Time Input field (e.g., 07:30).   
+     Clicking the Set Alarm button activates the alarm functionality.
+2.Alarm Trigger:
+     The app continuously checks the current time against the alarm time. 
+     If they match, the alarm goes off with a motivational message: "Wake up! Time to stop procrastinating!".
+3.Snooze Functionality:
+     When the alarm goes off, the user can press the Snooze button.
+     After each snooze, the Snooze Count increments. If the user presses snooze more than twice, the app will present a math challenge (e.g., What is 5 + 7?) to delay the alarm.
+     If the user answers correctly, the alarm will snooze. If the answer is wrong, the alarm keeps ringing until the challenge is solved.
+
 
 ### Project Demo
 # Video
