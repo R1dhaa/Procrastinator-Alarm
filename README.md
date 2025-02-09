@@ -66,16 +66,16 @@ Code that adds alarm sound
 ## Final Product
 ![10d546ab-2d3a-4c44-8246-493a6c6b6c1d](https://github.com/user-attachments/assets/5a7e9b0b-ef08-4717-8c68-3478d40b1342)
 
-1.Setting the Alarm:
-     The user can set the alarm by entering a time in the Alarm Time Input field (e.g., 07:30).   
-     Clicking the Set Alarm button activates the alarm functionality.
-2.Alarm Trigger:
-     The app continuously checks the current time against the alarm time. 
-     If they match, the alarm goes off with a motivational message: "Wake up! Time to stop procrastinating!".
-3.Snooze Functionality:
-     When the alarm goes off, the user can press the Snooze button.
-     After each snooze, the Snooze Count increments. If the user presses snooze more than twice, the app will present a math challenge (e.g., What is 5 + 7?) to delay the alarm.
-     If the user answers correctly, the alarm will snooze. If the answer is wrong, the alarm keeps ringing until the challenge is solved.
+1.Setting the Alarm:  
+     The user can set the alarm by entering a time in the Alarm Time Input field (e.g., 07:30).     
+     Clicking the Set Alarm button activates the alarm functionality.  
+2.Alarm Trigger:  
+     The app continuously checks the current time against the alarm time.  
+     If they match, the alarm goes off with a motivational message: "Wake up! Time to stop procrastinating!".  
+3.Snooze Functionality:  
+     When the alarm goes off, the user can press the Snooze button.  
+     After each snooze, the Snooze Count increments. If the user presses snooze more than twice, the app will present a math challenge (e.g., What is 5 + 7?) to delay the alarm.  
+     If the user answers correctly, the alarm will snooze. If the answer is wrong, the alarm keeps ringing until the challenge is solved.  
 
 
 ## Project Demo
