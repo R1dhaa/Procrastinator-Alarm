@@ -49,8 +49,6 @@ Code that shows the basic structure of procrastinator alarm
 ![Image](https://github.com/user-attachments/assets/e93ff049-5e58-4741-a8d9-6d3fad615488)
 Code that adds alarm sound
 
-## Diagrams
-
 ## Build Photos
 ### The Team
 ![image](https://github.com/user-attachments/assets/d30193ae-f7d6-489b-9c07-d64aebb2f4df)
